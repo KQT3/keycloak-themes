@@ -37,7 +37,7 @@ services:
       KEYCLOAK_IMPORT: /tmp/realm-export.json
     volumes:
       - ./realm-export.json:/tmp/realm-export.json
-    #    - ../themes/keycloak-theme:/opt/jboss/keycloak/themes/keycloak/
+      - ../themes/new-theme:/opt/jboss/keycloak/themes/new-theme
     depends_on:
       - postgres
     networks:
