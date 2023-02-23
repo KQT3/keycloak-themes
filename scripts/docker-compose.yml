@@ -34,7 +34,7 @@ services:
       - "8080:8080"
       - "8443:8443"
     # volumes:
-    #    - /keycloak-theme:/opt/jboss/keycloak/themes/keycloak/
+    #    - ../themes/keycloak-theme:/opt/jboss/keycloak/themes/keycloak/
     depends_on:
       - postgres
     networks:
