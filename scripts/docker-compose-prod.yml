@@ -1,7 +1,7 @@
-# docker stop keycloak_prod && docker rm keycloak_prod && docker stop postgres_prod && docker rm postgres_prod && docker volume rm postgres_prod_data && docker-compose -f docker-compose-prod.yml up
+# docker stop keycloak_prod && docker rm keycloak_prod && docker stop postgres_prod && docker rm postgres_prod && docker volume rm postgres_prod_data
 # docker-compose -f docker-compose-prod.yml up
 # docker-compose -f docker-compose-prod.yml down
-# docker exec -it keycloak_prod sh -c "cat opt/jboss/keycloak/themes/new-theme/login/resources/css/login.css"
+# docker exec -it keycloak_prod sh
 
 version: '3.5'
 services:
@@ -27,7 +27,7 @@ services:
       - "8443:8443"
     environment:
       DB_VENDOR: POSTGRES
-      DB_ADDR: postgres
+      DB_ADDR: postgres_prod
       DB_DATABASE: keycloak
       DB_USER: keycloak
       DB_SCHEMA: public
@@ -37,9 +37,8 @@ services:
       PROXY_ADDRESS_FORWARDING: "true"
       KEYCLOAK_IMPORT: /tmp/realm-export.json
     volumes:
-#      - ./realm-export.json:/tmp/realm-export.json
+      - ./realm-export.json:/tmp/realm-export.json
       - ../themes/new-theme:/opt/jboss/keycloak/themes/new-theme
-
     depends_on:
       - postgres_prod
     networks:
