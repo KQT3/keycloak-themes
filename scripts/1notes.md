@@ -39,5 +39,6 @@ Email Theme ->
 ##### Copy Keycloak theme to Directory
 
 ```
-docker cp keycloak_name:/opt/jboss/keycloak/themes/keycloak/ ./themes/new-theme
+docker cp keycloak_prod:/opt/jboss/keycloak/themes/keycloak/ ./themes/new-theme
+docker cp keycloak_prod:/opt/jboss/keycloak/themes/base ./themes/base
 ```

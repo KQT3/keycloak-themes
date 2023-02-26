@@ -2,6 +2,7 @@
 # docker-compose -f docker-compose-dev.yml up
 # docker-compose -f docker-compose-dev.yml down
 # docker exec -it keycloak_dev sh -c "cat opt/jboss/keycloak/themes/new-theme/login/resources/css/login.css"
+# docker exec -it keycloak_dev sh
 
 version: '3.5'
 services:
@@ -16,7 +17,8 @@ services:
       KEYCLOAK_ADMIN: admin
       KEYCLOAK_ADMIN_PASSWORD: admin
     volumes:
-      - ../themes/new-theme:/opt/keycloak/themes/new-theme
+      - ../themes/base:/opt/keycloak/themes/base
+      - ../themes/chainbot-theme:/opt/keycloak/themes/chainbot-theme
     networks:
       - keycloak_net
 
