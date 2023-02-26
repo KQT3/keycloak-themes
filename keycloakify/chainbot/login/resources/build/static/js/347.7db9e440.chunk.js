@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkqt3music_keycloak_theme=self.webpackChunkqt3music_keycloak_theme||[]).push([[347],{8347:function(e,t,o){o.r(t);var n=o(5987),c=o(2791),s=o(184),u=["kcContext","i18n"],i=(0,c.memo)((function(e){var t=e.kcContext;e.i18n,(0,n.Z)(e,u);return console.log("TODO: Do something with: ".concat(t.someCustomValue)),(0,s.jsx)(s.Fragment,{children:"It is up to you to implement this page"})}));t.default=i}}]);
+//# sourceMappingURL=347.7db9e440.chunk.js.map

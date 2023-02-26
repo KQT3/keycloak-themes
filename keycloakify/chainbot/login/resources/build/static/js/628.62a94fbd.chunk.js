@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkqt3music_keycloak_theme=self.webpackChunkqt3music_keycloak_theme||[]).push([[628],{9628:function(e,t,n){n.r(t);var c=n(5987),u=n(2791),i=n(184),k=["kcContext","i18n"],o=(0,u.memo)((function(e){e.kcContext,e.i18n,(0,c.Z)(e,k);return(0,i.jsx)(i.Fragment,{children:"It is up to you to implement this page"})}));t.default=o}}]);
+//# sourceMappingURL=628.62a94fbd.chunk.js.map
