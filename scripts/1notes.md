@@ -42,3 +42,15 @@ Email Theme ->
 docker cp keycloak_prod:/opt/jboss/keycloak/themes/keycloak/ ./themes/new-theme
 docker cp keycloak_prod:/opt/jboss/keycloak/themes/base ./themes/base
 ```
+
+##### Setup for dev use
+
+```
+<script>
+// refresh every 1 sec
+    setInterval(() => {
+      window.location.reload();
+        console.log("refreshed")
+    }, 1000);
+</script>
+```

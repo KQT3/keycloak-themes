@@ -17,8 +17,8 @@ services:
       KEYCLOAK_ADMIN: admin
       KEYCLOAK_ADMIN_PASSWORD: admin
     volumes:
-      - ../themes/base:/opt/keycloak/themes/base
-      - ../themes/chainbot-theme:/opt/keycloak/themes/chainbot-theme
+      - ../themes/test-theme/base:/opt/keycloak/themes/base
+      - ../themes/test-theme/new-theme:/opt/keycloak/themes/new-theme
     networks:
       - keycloak_net
 
